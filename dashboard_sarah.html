@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | Sarah</title>
+
+    <link rel="stylesheet" href="dashboard_sarah.css">
+
+</head>
+
+<body>
+    <!-- inicio sidebar -->
+
+    <div class="minimenu"></div>
+    <div class="sidebar">
+        <ul>
+            <li class="logo" style="--bg: #333;">
+                <a href="#">
+                    <div class="icon">
+                    </div>
+                    <div class="text">PowerTech</div>
+                </a>
+            </li>
+            <div class="listmenu">
+                <li style="--bg: #F7E11B;" class="active">
+                    <a href="#">
+                        <div class="icon"><ion-icon name="analytics-outline"></ion-icon></div>
+                        <div class="text">Geral</div>
+                    </a>
+                </li>
+                <li style="--bg: #F7E11B;">
+                    <a href="#">
+                        <div class="icon"><ion-icon name="cube-outline"></ion-icon></div>
+                        <div class="text">MFs</div>
+                    </a>
+                </li>
+                <li style="--bg: #F7E11B;">
+                    <a href="#">
+                        <div class="icon"><ion-icon name="wallet-outline"></ion-icon></div>
+                        <div class="text">VMs</div>
+                    </a>
+                </li>
+                <li style="--bg: #F7E11B;">
+                    <a href="#">
+                        <div class="icon"><ion-icon name="people-outline"></ion-icon></div>
+                        <div class="text">Adicionar Permissões</div>
+                    </a>
+                </li>
+                <li style="--bg: #F7E11B;">
+                    <a href="#">
+                        <div class="icon"><ion-icon name="person-add-outline"></ion-icon></div>
+                        <div class="text">Adicionar Usuario</div>
+                    </a>
+                </li>
+            </div>
+            <div class="pessoa">
+                <li style="--bg: #333;">
+                    <a href="#">
+                        <div class="icon">
+                            <div class="imgBx">
+                                <img src="dash_pt/usuario_redondo.png" alt="">
+                            </div>
+                        </div>
+                        <div class="text">Undefined</div>
+                    </a>
+                </li>
+                <li style="--bg: #333;">
+                    <a href="#">
+                        <div class="icon"><ion-icon name="log-out-outline"></ion-icon></div>
+                        <div class="text">Sair</div>
+                    </a>
+                </li>
+            </div>
+        </ul>
+    </div>
+
+    <!-- fim sidebar -->
+
+    <!-- inicio do conteúdo da página -->
+
+    <div class="foraside">
+        <div class="topo">
+
+            <div class="custom-select">
+                <select name="selected">
+                    <option value="valor1">Escolher Maquina</option>
+                    <option value="valor2">Maquina 1</option>
+                    <option value="valor3">Maquina 2</option>
+                    <option value="valor4">Maquina 3</option>
+                </select>
+            </div>
+
+            <div class="user">
+                <h4>Usuario Responsavel: Undefined</h4>
+            </div>
+        </div>
+
+        <div class="first-container">
+
+            <div class="kpi kp2">
+                <h3>Processos Estáveis 🟢</h3>
+            </div>
+            <div class="kpi kp3">
+                <h3>Processos Encerrados</h3>
+            </div>
+            <div class="kpi kp1">
+                <h3>Registro de Processos</h3>
+                <div class="registro-container">
+                    <div class="info-r">
+                        <span>NOME</span>
+                        <span>DATA HORA</span>
+                        <span>STATUS</span>
+                    </div>
+                    <div class="tuplas">
+                        <span>Adom.com</span>
+                        <span> 23/05/2023 12:30</span>
+                        <span> 🟢 </span>
+                    </div>
+                    <div class="tuplas">
+                        <span>Adom.com</span>
+                        <span> 23/05/2023 12:30</span>
+                        <span> 🔴 </span>
+                    </div>
+                    <div class="tuplas">
+                        <span>Adom.com</span>
+                        <span> 23/05/2023 12:30</span>
+                        <span> 🔴 </span>
+                    </div>
+                    <div class="tuplas">
+                        <span>Adom.com</span>
+                        <span> 23/05/2023 12:30</span>
+                        <span> 🟡 </span>
+                    </div>
+                    <div class="tuplas">
+                        <span>Adom.com</span>
+                        <span> 23/05/2023 12:30</span>
+                        <span> 🟢 </span>
+                    </div>
+                    <div class="tuplas">
+                        <span>Adom.com</span>
+                        <span> 23/05/2023 12:30</span>
+                        <span> 🟢 </span>
+                    </div>
+                    <div class="tuplas">
+                        <span>Adom.com</span>
+                        <span> 23/05/2023 12:30</span>
+                        <span> 🔴 </span>
+                    </div>
+                    <div class="tuplas">
+                        <span>Adom.com</span>
+                        <span> 23/05/2023 12:30</span>
+                        <span> 🟡 </span>
+                    </div>
+                    <div class="tuplas">
+                        <span>Adom.com</span>
+                        <span> 23/05/2023 12:30</span>
+                        <span> 🟢 </span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="second-container">
+            <div class="picos">
+
+            </div>
+            <div class="leftcard">
+                <h4>Monitor de Desempenho Crítico</h4>
+                <div class="table-container">
+                    <div class="info-m">
+                        <span>ALERTA</span>
+                        <span>NOME</span>
+                        <span>USO CPU</span>
+                        <span>USO RAM</span>
+                        <span>EDITAR</span>
+                    </div>
+                    <div class="lines">
+                        <span>🔴</span>
+                        <span>Processo 1</span>
+                        <span> 23% </span>
+                        <span> 35% </span>
+                        <span><button>Matar Processo</button></span>
+                    </div>
+                    <div class="lines">
+                        <span>🟡</span>
+                        <span>Processo 2</span>
+                        <span> 23% </span>
+                        <span> 35% </span>
+                        <span><button>Matar Processo</button></span>
+                    </div>
+                    <div class="lines">
+                        <span>🔴</span>
+                        <span>Processo 3</span>
+                        <span> 23% </span>
+                        <span> 35% </span>
+                        <span><button>Matar Processo</button></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <script>
+
+        let minimenu = document.querySelector('.minimenu');
+        let sidebar = document.querySelector('.sidebar');
+
+        minimenu.onclick = function () {
+            sidebar.classList.toggle('active');
+            document.body.classList.toggle('body-active-sidebar');
+        }
+
+
+        let listmenu = document.querySelectorAll('.listmenu li');
+        function activeLink(
+        ) {
+            listmenu.forEach((item) => item.classList.remove('active'));
+            this.classList.add('active')
+        }
+        listmenu.forEach((item) => item.addEventListener('click', activeLink));
+    </script>
+
+    <script>
+
+        function PegarProcessosAtuais() {
+
+            fetch("/processo/ExibirUltimosProcessos", {
+                method: "GET",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+
+            }).then(function (resposta) {
+
+                resposta.json().then(json => {
+                    console.log(json);
+                });
+
+            }
+            ).catch(function (erro) {
+                console.log(erro);
+            })
+
+        }
+
+        PegarProcessosAtuais()
+
+
+    </script>
+
+</body>
+
+</html>
