@@ -22,9 +22,10 @@ try:
             data = datetime.datetime.now()
 
             mycursor.execute('''
-                INSERT INTO Processos (nome, PID, uso_cpu, uso_ram, data_hora, fkMaquina, fkTipo)
-                VALUES (%s, %s, %s, %s, %s, %s, %s) 
-            ''', (nome, pid, uso_cpu, uso_memoria, data, 1, 1))
+    INSERT INTO Processos (PID, nomeProcesso, cpu_processo, uso_ram, data_hora, fkMaquina)
+    VALUES (%s, %s, %s, %s, %s, %s) 
+''', (pid, nome, uso_cpu, uso_memoria, data, 1))
+
 
             mydb.commit()
             time.sleep(1)
@@ -35,4 +36,5 @@ finally:
     if mydb.is_connected():
         mycursor.close()
         mydb.close()
+
 
