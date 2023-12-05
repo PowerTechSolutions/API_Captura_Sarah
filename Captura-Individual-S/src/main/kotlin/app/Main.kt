@@ -3,6 +3,7 @@ package app
 import CodigoPythonPeri
 import MaquinasRepositorio
 import Monitoramento_RAWRepositorio
+//import Processos_Repositorio
 import ServicoCadastradoRepositorio
 import ServicoMonitoradoRepositorio
 import ServicosMonitorados
@@ -40,7 +41,7 @@ open class Main {
                 var funcionario:Usuario = usuario_repositorio.resgatarinfo(Email)
 
                 var maquinas:String = maquina_repositorio.pegarMaquinas(funcionario.IDUsuario)
-                    println("Qual a numeração da maquina e está que está instalando o serviço? $maquinas")
+                    println("Qual a numeração da maquina em que você deseja iniciar a captura? $maquinas")
 
                     var maquinaEscolhida = sn.next().toInt()
 
@@ -63,6 +64,7 @@ open class Main {
 //                }
 
                 Captura(funcoes,servicos,maquinaEscolhida,dataAtual)
+//                    processo()
 
             }
 
@@ -102,5 +104,13 @@ open class Main {
             CodigoPythonPeri.execpython(servicos)
 
             }
+//        fun processo(){
+//            var repositorio = Processos_Repositorio()
+//            repositorio.iniciar()
+//            while(true){
+//                repositorio.apagarEAtualizarListaProcesso()
+//            }
+//        }
         }
+
 }

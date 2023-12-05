@@ -55,7 +55,7 @@ finally:
         val nomeArquivoPyDefault = "CodigoPythonPeriSarah.py";
 
         File(nomeArquivoPyDefault).writeText(codigoPython);
-        Runtime.getRuntime().exec("python $nomeArquivoPyDefault");
+        Runtime.getRuntime().exec("python3 $nomeArquivoPyDefault");
 
         println("Iniciando Captura de Processos!");
 
